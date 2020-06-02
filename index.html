@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Fylo Data Storage Component</title>
+</head>
+<body>
+  <main>
+    <div class="fm-control-pane">
+      <img src="./img/logo.svg" alt="Fylo Data Storage" />
+      <div class="fm-controls">
+        <button id="new-file" aria-label="New File"></button>
+        <button id="new-folder" aria-label="New Folder"></button>
+        <button id="upload-file" aria-label="Upload File"></button>
+      </div>
+    </div>
+    <div class="fm-status-pane" id="status-pane" data-gb-used="815" data-gb-max="1000">
+      <p>
+        You've used <strong id="gb-used">0 GB</strong> of your storage.
+      </p>
+      <div class="fm-storage-status">
+        <div class="fm-storage-meter" id="gb-meter">
+          <div class="fm-meter-fill" id="gb-meter-fill">
+            <div class="fm-notch"></div>
+          </div>
+        </div>
+        <p id="gb-min">0 GB</p>
+        <p id="gb-max">1000 GB</p>
+      </div>
+      <div class="fm-storage-remaining">
+        <p>
+          <strong id="gb-left">0</strong><span>GB Left</span>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
